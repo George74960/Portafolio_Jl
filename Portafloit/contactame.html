@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Trabajos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #202020;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+    }
+
+    /* Encabezado con título y botón */
+    .header-trabajos {
+      display: flex;
+      justify-content: center; /* centra horizontalmente */
+      align-items: center;
+      gap: 20px; /* espacio entre título y botón */
+      padding: 40px 0;
+    }
+
+    .header-trabajos h2 {
+      font-family: 'Shrikhand', cursive;
+      font-size: 36px;
+      color: cyan;
+      margin: 0;
+    }
+
+    .btn-volver {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, cyan, deepskyblue);
+      color: #181818;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 25px;
+      box-shadow: 0 4px 10px rgba(0,255,255,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .btn-volver:hover {
+      background: linear-gradient(45deg, deepskyblue, cyan);
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0,255,255,0.7);
+    }
+
+    /* Galería */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #181818;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,255,255,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      color: cyan;
+    }
+
+    .card p {
+      font-size: 14px;
+      padding: 0 15px 20px;
+      color: #ccc;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,255,255,0.6);
+    }
+      .card {
+  background-color: #181818;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,255,255,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* centra todo el texto dentro de la caja */
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: cyan;
+  text-align: center; /* asegura que el título esté centrado */
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0 15px 20px;
+  color: #ccc;
+  text-align: center; /* centra la descripción */
+}
+
+  </style>
+</head>
+<body>
+  <section class="mis-trabajos">
+    <!-- Encabezado con título y botón -->
+    <div class="header-trabajos">
+      <h2>Mis Trabajos</h2>
+      <a href="index.html" class="btn-volver">Volver al Inicio</a>
+    </div>
+
+    <!-- Galería -->
+    <div class="galeria">
+      <div class="card">
+        <img src="img/html%205.png" alt="Trabajo 1">
+        <h3>Proyectos HTML</h3>
+        <p>Trabajos y proyectos sencillos unicamente de manera escolar de HTML.</p>
+      </div>
+      <div class="card">
+        <img src="img/paginas.png" alt="Trabajo 2">
+        <h3>Paginas web</h3>
+        <p>Desarllo de paginas web para proyectos y trabajos escolares.</p>
+      </div>
+      <div class="card">
+        <img src="img/aplicacionesweb.png" alt="Trabajo 3">
+        <h3>Aplicaciones</h3>
+        <p>Desarrollo de aplicaciones basicas desarrolladas para proyectos escolares.</p>
+      </div>
+      <div class="card">
+        <img src="img/datosg.png" alt="Trabajo 4">
+        <h3>Bases de datos</h3>
+        <p>Bases de datos creadas desde informacion ficticia solo hechos de trabajos y proyectos escolares.</p>
+      </div>
+      <div class="card">
+        <img src="img/java.png" alt="Trabajo 5">
+        <h3>Java Netbeans</h3>
+        <p>Proyectos medios/basicos de programacion solo para trabajos escolares y proyectos por igual.</p>
+      </div>
+      <div class="card">
+        <img src="img/ingles.png" alt="Trabajo 6">
+        <h3>Idiomas</h3>
+        <p>Habla de español e ingles por igual oficialmente tendiendo un certificado de ingles de B+ por parte de Cambridge.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
